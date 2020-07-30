@@ -1,0 +1,94 @@
+body{
+    font-family:sans-serif;
+}
+*::selection{
+    background-color: yellow;
+}
+.home{
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.nav-link{
+    color: white !important;
+}
+.caption p{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.caption h1{
+    font-size: 4rem;
+}
+
+/***********************************************/
+.Advisor-item{
+    position: relative;
+    overflow: hidden;
+}
+.layer1{
+    position: absolute;
+    left: 15px;
+    right:15px;
+    bottom: 100%;
+    top: -100%;
+    z-index: 66666;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+.Advisor-item:hover .layer1{
+    bottom: 15px;
+    top: 15px;
+}
+.layer2{
+    position: absolute;
+    left: 15px;
+    right:15px;
+    bottom:15px;
+    background-color: white;
+    transition: all 1s;
+}
+.Advisor-item:hover .layer2{
+    transition-delay: 0.2s;
+    bottom: -100%;
+}
+/****************************************************/
+.category-items{
+    position: relative;
+}
+.black-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 1s;
+}
+.category-items:hover .black-layer{
+    opacity: 0.5;
+}
+/*********************************************************/
+a{
+    cursor: pointer;
+}
+.img-item{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: darkgoldenrod;
+    transition: opacity 1s;
+}
+.img-item:hover .overlay{
+    opacity: 0.6;
+}
+/************************************************************/
+footer{
+    background-image: url(../img/map-image.png);
+    background-color: black;
+}
